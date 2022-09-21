@@ -51,13 +51,23 @@ a {
     font-size: 4rem;
     position: relative;
     color: #fff;
+}
 
+#hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
 }
 
 #hero .cta {
     display: inline-block;
     padding: 10px 30px;
-    color: crimson;
+    color: #fff;
     background-color: transparent;
     border: 2px solid crimson;
     font-size: 2rem;
@@ -73,3 +83,17 @@ a {
     background-color: crimson;
 }
 /* END OF HERO SECTION */
+
+/* KEYFRAMES */
+@keyframes text_reveal_box{
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0%;
+        left: 100%;
+    }
+}
+/* END OF KEYFRAMES */
