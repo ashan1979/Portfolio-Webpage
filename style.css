@@ -29,6 +29,19 @@ img {
     object-fit: cover;
 }
 
+.section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #222;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+.section-title span {
+    color: crimson;
+}
+
 #services .service-top p {
     color: #222;
      font-size: 1.4rem;
@@ -132,20 +145,6 @@ img {
     padding: 100px 0;
 }
 
-#services .section-title {
-    font-size: 4rem;
-    font-weight: 300;
-    color: #222;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
-}
-
-#services .section-title span {
-    color: crimson;
-}
-
 #services .service-bottom {
     display: flex;
     align-items: center;
@@ -202,6 +201,16 @@ img {
 
 
 /*  End of Services Section  */
+
+/* Projects Section */
+#projects .projects {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+/* End of Projects Section */
 
 /* KEYFRAMES */
 @keyframes text_reveal_box{
