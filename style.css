@@ -23,6 +23,12 @@ a {
     justify-content: center;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 /* HERO SECTION */
 
 #hero {
@@ -167,10 +173,18 @@ a {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: linear-gradient(60deg,#29323c 0%,#485563 100%);
+    background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
     opacity: 0.8;
     z-index: -1;
 }
+
+#services .service-bottom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+
 /*  End of Services Section  */
 
 /* KEYFRAMES */
