@@ -29,6 +29,16 @@ img {
     object-fit: cover;
 }
 
+#services .service-top p {
+    color: #222;
+     font-size: 1.4rem;
+     margin-top: 5px;
+     line-height: 2.5rem;
+     font-weight: 300px;
+     letter-spacing: 0.05rem;
+}
+
+
 /* HERO SECTION */
 
 #hero {
@@ -113,7 +123,7 @@ img {
 /* END OF HERO SECTION */
 
 /*  Services Section  */
-#services {}
+
 #services .services {
     flex-direction: column;
     text-align: center;
@@ -136,19 +146,12 @@ img {
     color: crimson;
 }
 
-#services .service-top p {
-     font-size: 1.4rem;
-     margin-top: 5px;
-     line-height: 2.5rem;
-     font-weight: 300px;
-     letter-spacing: 0.05rem;
-}
-
 #services .service-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 #services .service-item {
@@ -164,6 +167,7 @@ img {
     margin: 10px 5%;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 #services .service-item::after {
@@ -182,6 +186,18 @@ img {
     height: 80px;
     width: 80px;
     margin-bottom: 20px;
+}
+
+#services .service-item h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#services .service-item p {
+    color: #fff;
+    text-align: left;
 }
 
 
