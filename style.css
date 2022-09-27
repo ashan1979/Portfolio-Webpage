@@ -510,6 +510,11 @@ img {
      #projects .project-item {
         flex-direction: row;
      }
+
+     #projects .project-item:nth-child(even){
+        flex-direction: row-reverse;
+     }
+
      #projects .project-item {
         height: 400px;
         margin: 0;
@@ -522,9 +527,35 @@ img {
      }
 
      #projects .all-projects .project-img {
-        height: 110%;
+        height: 100%;
      }
      /* End of Projects */
+
+     /* About */
+
+     #about .about {
+        flex-direction: row;
+     }
+
+     #about .column-left {
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+     }
+
+     #about .about .column-left .about-img {
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid crimson;
+     }
+
+     #about .column-right {
+        text-align: left;
+        padding: 30px;
+     }
+     /* End of About */
 }
 /* END OF MEDIA QUERY FOR TABLET */
 
