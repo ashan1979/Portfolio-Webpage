@@ -601,3 +601,13 @@ img {
 }
 /* END OF MEDIA QUERY FOR TABLET */
 
+
+/* Media Query for Desktop */
+@media only screen and (min-width:1200px){
+    #services .service-bottom .service-item {
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+}
+
+/* End of Media Query for Desktop */
