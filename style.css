@@ -156,6 +156,11 @@ img {
     padding: 100px 0;
 }
 
+#services .service-top {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 #services .service-bottom {
     display: flex;
     align-items: center;
@@ -188,7 +193,7 @@ img {
     height: 100%;
     width: 100%;
     background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
-    opacity: 0.8;
+    opacity: 0.9;
     z-index: -1;
 }
 
