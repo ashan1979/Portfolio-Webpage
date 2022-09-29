@@ -9,6 +9,7 @@
 html {
     font-size: 10px;
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -27,6 +28,15 @@ img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+p {
+    color: #000;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
 }
 
 .section-title {
@@ -115,7 +125,7 @@ img {
 }
 
 #header .nav-list ul.active {
-    left: 20%;
+    left: 0%;
 }
 
 #header .nav-list ul a {
@@ -214,16 +224,6 @@ img {
 }
 /* End of Header */
 
-#services .service-top p {
-    color: #222;
-     font-size: 1.4rem;
-     margin-top: 5px;
-     line-height: 2.5rem;
-     font-weight: 300px;
-     letter-spacing: 0.05rem;
-}
-
-
 /* HERO SECTION */
 
 #hero {
@@ -244,6 +244,13 @@ img {
     background-color: #000;
     opacity: 0.7;
     z-index: -1;
+}
+
+#hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
 }
 
 #hero h1 {
@@ -358,10 +365,10 @@ img {
     text-align: left;
 }
 
-
 /*  End of Services Section  */
 
 /* Projects Section */
+
 #projects .projects {
     flex-direction: column;
     max-width: 1200px;
@@ -394,7 +401,6 @@ img {
 #projects .project-info {
     padding: 30px;
     flex-basis: 50%;
-    background-color: #fff;
     height: 100%;
     display: flex;
     align-items: flex-start;
@@ -444,7 +450,9 @@ img {
 #projects:hover .project-img img {
     transform: scale(1.1);
 }
+
 /* End of Projects Section */
+
 /* About Section */
 
 #about .about {
@@ -456,7 +464,7 @@ img {
 }
 
 #about .column-left {
-    width: 150px;
+    width: 250px;
     height: 360px;
 }
 
@@ -484,7 +492,7 @@ img {
 
 #about .column-left .about-img {
     height: 100%;
-    width: 150%;
+    width: 100%;
     position: relative;
     border: 10px solid #fff;
 }
@@ -504,50 +512,46 @@ img {
 /* Contact Section */
 
 #contact .contact {
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
 }
-
 #contact .contact-items {
-    width: 400px;
+	/* max-width: 400px; */
+	width: 100%;
 }
-
 #contact .contact-item {
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0px 0px 18px 0 #0000002c;
-    transition: 0.3s ease box-shadow;
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	transition: 0.3s ease box-shadow;
 }
-
 #contact .contact-item:hover {
-    box-shadow: 0px 0 px 5px 0 #0000002c;
+	box-shadow: 0px 0px 5px 0 #0000002c;
 }
-
 #contact .icon {
-    width: 70px;
-    margin: 0 auto;
-    margin-bottom: 10px;
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 10px;
 }
-
 #contact .contact-info h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-bottom: 5px;
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 5px;
 }
-
 #contact .contact-info h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 500;
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 500;
 }
 /* End of Contact Section */
 
