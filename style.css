@@ -140,6 +140,48 @@ img {
     transform: translate(-50%, -50%) scale(1);
     letter-spacing: initial;
 }
+
+#header .hamburger {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+}
+
+#header .hamburger .bar {
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color: #fff;
+    z-index: -1;
+}
+
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    transition: 0.3 ease;
+    transition-property: top, bottom;
+}
+
+#header .hamburger .bar::after {
+    bottom: 8px;
+}
+
+#header .hamburger .bar::before {
+    top: 8px;
+}
 /* End of Header */
 
 #services .service-top p {
